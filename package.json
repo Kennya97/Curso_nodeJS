@@ -1,0 +1,22 @@
+{
+  "name": "curso-nodejs",
+  "version": "1.0.0",
+  "description": "Curso nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kennya97/Curso_nodeJS.git"
+  },
+  "author": "Kennya Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kennya97/Curso_nodeJS/issues"
+  },
+  "homepage": "https://github.com/Kennya97/Curso_nodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
