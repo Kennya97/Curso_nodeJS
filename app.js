@@ -1,25 +1,19 @@
 //const http = require('http');
 const express = require('express');
-const authRouter = require('./routes/auth');
-const server = express()
-    /*const RutaAdmin = express
+const path = require('path');
 
-    app.get('/', (req, res, next) => {
-        res.sendFile(__dirname + "/views/index.html")
-    })*/
-
-server.use("/auth", authRouter);
-
-server.get("/", (req, res) => {
-    res.send("Index")
-})
+const homeRouter = require('./routes/home');
+const blogRouter = require('./routes/blog');
+const contactRouter = require('./routes/contact');
 
 
+const server = express();
 
 
-/*
-RutaAdmin.get("/", (req, res) => {
+server.use(express.static(path.join(__dirname, 'public')));
 
-})*/
+server.use("/home", homeRouter);
+server.use('/blog', blogRouter);
+server.use('/contact', contactRouter)
 
 server.listen(8080);
